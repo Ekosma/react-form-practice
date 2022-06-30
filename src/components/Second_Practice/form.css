@@ -1,8 +1,10 @@
+/* class selectors */
 .form {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
 }
+/* element selectors */
 input {
   display: block;
   width: 20rem;
