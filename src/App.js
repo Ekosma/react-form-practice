@@ -1,10 +1,14 @@
 import React from 'react'
-import Form from './components/First_Practice/form'
+import First from './components/First_Practice/form'
+import Second from './components/Second_Practice/form'
 
 function App() {
 
   return (
-    <Form/>
+    <>
+    <First/>
+    <Second />
+    </>
   )
 }
 
