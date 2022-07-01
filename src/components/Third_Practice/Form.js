@@ -3,6 +3,7 @@ import FormInput from './FormInput'
 
 const Form = () => {
 
+  //inital state of values (Hooks)
   const [values, setValues] = useState({
     username: "",
     email: "",
@@ -11,6 +12,7 @@ const Form = () => {
     confirmPassword: "",
   })
 
+  //the data for the form as an object 
   const inputs = [
     {
       id: 1,
@@ -60,10 +62,12 @@ const Form = () => {
     },
   ]
 
+  //barebones handle submit, no fetch to APU added
   const handleSubmit = (e) => {
     e.preventDefault();
   }
 
+  //onChange works for ALL values 
   const onChange = (e) => {
     setValues({...values, [e.target.name]: e.target.value});
   }

@@ -10,18 +10,22 @@ const  FormInput = (props) => {
     setFocused(true);
   }
 
+  //creates an individual form div, will be itterated to make complete form 
   return (
     <div className='formInput'>
       <label>{label}</label>
       <input 
         {...inputProps}
         onChange={onChange}
+        //onBlur occurs when an object loses Focus (i.e. the user clicks out of the box)
         onBlur={handleFocus}
-        onFocus={() => 
+        //if confirm password and user is in box, then 
+        /*onFocus={() => 
           inputProps.name === "confirmedPassword" && setFocused(true)
-        }
+        }*/
         focused={focused.toString()}
       />
+      {/* span is inline */}
       <span>{errorMessage}</span>
     </div>
   )
